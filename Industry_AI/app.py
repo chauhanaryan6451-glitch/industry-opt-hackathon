@@ -4,7 +4,7 @@ import numpy as np
 import plotly.express as px
 from pathlib import Path
 
-st.set_page_config(page_title="FoodPulse AI", page_icon="⚡", layout="wide")
+st.set_page_config(page_title="Smart Manufacturing", page_icon="⚡", layout="wide")
 
 DATA = Path(__file__).resolve().parent / "data" / "food_factory_data.csv"
 df = pd.read_csv(DATA, parse_dates=["timestamp"])
@@ -25,7 +25,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<div class="main-title">⚡ FoodPulse AI</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-title">⚡ Smart Manufacturing</div>', unsafe_allow_html=True)
 st.markdown('<div class="sub">Smart Energy & Process Intelligence for Food-Processing SMEs</div>', unsafe_allow_html=True)
 st.divider()
 
