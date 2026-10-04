@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -7,7 +6,7 @@ from pathlib import Path
 
 st.set_page_config(page_title="FoodPulse AI", page_icon="⚡", layout="wide")
 
-DATA = Path("data/food_factory_data.csv")
+DATA = Path(__file__).resolve().parent / "data" / "food_factory_data.csv"
 df = pd.read_csv(DATA, parse_dates=["timestamp"])
 
 # Constants: clearly marked as prototype assumptions
